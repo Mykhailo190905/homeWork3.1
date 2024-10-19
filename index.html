@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types</title>
+</head>
+<body>
+    <h1>Check the console for data types!</h1>
+
+    <script>
+       
+        let stringType = "Hello, world!";         // строка
+        let numberType = 42;                      // число
+        let booleanType = true;                   // булевый тип
+        let undefinedType;                        // неопределенный тип
+        let nullType = null;                      // null
+        let objectType = { name: "Mykhailo", age: 19 };  // объект
+        let arrayType = [1, 2, 3, 4];             // массив
+        let functionType = function() {};         // функция
+        let symbolType = Symbol("symbol");        // символ
+        let bigintType = 1234567890123456789012345678901234567890n; // BigInt
+
+        console.log("stringType:", typeof stringType);        // string
+        console.log("numberType:", typeof numberType);        // number
+        console.log("booleanType:", typeof booleanType);      // boolean
+        console.log("undefinedType:", typeof undefinedType);  // undefined
+        console.log("nullType:", typeof nullType);            // object (особенность typeof)
+        console.log("objectType:", typeof objectType);        // object
+        console.log("arrayType:", typeof arrayType);          // object (массивы тоже объект)
+        console.log("functionType:", typeof functionType);    // function
+        console.log("symbolType:", typeof symbolType);        // symbol
+        console.log("bigintType:", typeof bigintType);        // bigint
+    </script>
+</body>
+</html>
